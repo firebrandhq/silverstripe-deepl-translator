@@ -22,8 +22,9 @@
         "silverstripe/framework": "^6",
         "tractorcow/silverstripe-fluent": "^8",
         "deeplcom/deepl-php": "^1.3.0",
-        "amphp/parallel-functions": "^1.1",
-        "arillo/silverstripe-cms-alpine": "^2.0"
+        "arillo/silverstripe-cms-alpine": "^2.0",
+        "amphp/parallel": "^2",
+        "amphp/amp": "^3"
     },
     "autoload": {
         "psr-4": {
@@ -34,5 +35,12 @@
         "expose": [
             "client"
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true,
+            "composer/installers": true,
+            "silverstripe/vendor-plugin": true
+        }
     }
 }

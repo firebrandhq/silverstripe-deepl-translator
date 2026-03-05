@@ -77,6 +77,10 @@ class FieldWiseTranslationExtension extends Extension
                             $r->Locale->Locale
                         );
 
+                        if (str_starts_with($language, 'en-')) {
+                            $language = 'en';
+                        }
+
                         $currentValues->push(
                             new ArrayData([
                                 'Language' => $language,
